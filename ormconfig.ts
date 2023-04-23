@@ -1,9 +1,7 @@
 import { DataSourceOptions } from "typeorm";
-import dotenv from "dotenv";
-dotenv.config();
 
 const devConfig: DataSourceOptions = {
-  type: "mysql",
+  type: 'mysql',
   host: process.env.DB_HOST || 'localhost',
   username: process.env.DB_USER || 'root',
   password: process.env.DB_PASS || 'root',

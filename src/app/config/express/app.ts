@@ -1,10 +1,12 @@
+import 'reflect-metadata';
+import 'dotenv/config';
 import express from 'express';
 import setRoutes from './routes';
 
-import setupTypeorm from '../typeorm/index';
+import setupDatabase from '../typeorm/index';
 const app = express();
 
-setupTypeorm();
+setupDatabase();
 setRoutes(app);
 
 export default app;
