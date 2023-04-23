@@ -1,4 +1,4 @@
-import app from './config/app';
+import app from './config/express/app';
 
 const normalizaPort = (val: any) => {
   const port = parseInt(val, 10);
