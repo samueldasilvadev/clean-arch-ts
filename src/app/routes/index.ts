@@ -1,5 +1,10 @@
-import v1 from './v1';
+import dumb from './dumb';
+import hello from './hello';
+import express from 'express';
 
-export default {
-  v1,
-}
+const router = express.Router();
+
+router.use('/dumb', dumb);
+router.use('/hello', hello);
+
+export default router;
